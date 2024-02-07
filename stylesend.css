@@ -1,0 +1,42 @@
+body{
+    width: fit-content;
+    height: fit-content;
+background: #84fab0;
+
+}
+
+section{
+    height: 550px;
+    width: 350px;
+    background-color: black;
+    left:40%;
+    position: absolute;
+    top: 10%;
+    border-radius:13%;
+    
+}
+.div1{
+    margin-top: 20%;
+    text-align: center;
+    
+    
+
+}
+
+.head1{
+    color: #84fab0;
+    text-align: center;
+}
+input,textarea{
+    box-sizing: border-box;
+    background-color: black;
+   color: #84fab0;
+   border: none;
+   outline: none;
+   border-bottom: 1px solid #84fab0;
+   margin-top: 5%;
+   margin-bottom: 10%;
+   width:80%;
+    box-sizing:border-box;
+    -moz-box-sizing:border-box;
+}

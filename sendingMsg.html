@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>sending msg to WhatsApp</title>
+    <link rel="stylesheet" href="stylesend.css">
+</head>
+<body>
+<form action="">
+    <section>
+
+        <div class="head1">
+            <h2>SEND MESSAGE</h2>
+        </div>
+     
+        <div class="div1">
+            <input type="text" name="name" id="name" placeholder="Enter your name"><br>
+            <input type="number" name="mob" id="mob" placeholder="Enter your mobile number" maxlength="10"><br>
+            <input type="email" name="email" id="email" placeholder="Enter Email"><br>
+
+
+            <textarea name ="msg" id="msg" placeholder="Enter you message"></textarea><br><br>
+            <input type="submit" name="sub" id="sub" value="SEND" onclick="WhatsApp()">
+        </div>
+            
+        </section>
+
+        
+
+</form>    
+
+<script>
+    function WhatsApp(){
+        var name = document.getElementById("name").value;
+        var phono = document.getElementById("mob").value;
+        var email = document.getElementById("email").value;
+        var msg = document.getElementById("msg").value;
+
+        //var whatsappurl = "https://wa.me/"+phono+"?text="
+        var whatsappurl = "https://wa.me/918805857230?text="
+        +"Name of Customer : "+name +"%0a"
+        + "Contact Number : "+phono+"%0a"
+        + "Emial : "+email+"%0a"
+        +"Message : "+msg  ;
+
+        window.open(whatsappurl,"_blank");
+    }
+</script>
+</body>
+</html>
